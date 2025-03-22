@@ -3,10 +3,14 @@ import Hero from './components/Hero'
 import Features from './components/Features'
 import Team from './components/Team'
 import Footer from './components/Footer'
+import { Analytics } from "@vercel/analytics/react"
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 export default function App() {
   return (
     <>
+      <Analytics />
+      <SpeedInsights />
       <Helmet>
         <title>Snap Snap - 探索AI摄影的无限可能</title>
         <meta name="description" content="Snap Snap是您的AI摄影助手，为摄影师和创作者提供智能工具集，让创作更简单、更有趣。探索AI辅助摄影的无限可能。" />

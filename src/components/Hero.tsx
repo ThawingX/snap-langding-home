@@ -10,7 +10,8 @@ export default function Hero() {
     
     if (isMobile) {
       // 微信小程序路径，需要替换成实际的路径
-      window.location.href = 'weixin://dl/business/?t=wx77ab08d4e6c6e0fc'
+      // window.location.href = 'weixin://dl/business/?t=wx77ab08d4e6c6e0fc'
+      setShowQRCode(true)
     } else {
       setShowQRCode(true)
     }
